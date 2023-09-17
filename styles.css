@@ -1,0 +1,108 @@
+body {
+          font-family: Arial, sans-serif;
+         
+          
+          margin: 10px;
+          padding: 0;
+          
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          box-sizing: border-box;
+
+    
+          background-image: url('/ai.jpg'); /* Replace 'your-image.jpg' with your image file path */
+          background-size: cover; /* Adjust the image size */
+          background-repeat: no-repeat; /* Prevent image repetition */
+          background-attachment: fixed; /* Keep the background fixed while scrolling */
+
+    
+}
+
+.column.is-3.more{
+  background-color: transparent!important;
+}
+
+.img-container{
+      display:flex;
+      justify-content: space-between;
+      width:70%;
+      margin-left:70px;
+      margin-bottom:20px;
+      padding:20px;
+}
+p{
+    padding: 10px;
+    background-color: transparent!important;
+    color: white !important;
+}
+
+
+
+.registration-container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.81)!important;
+    color: white !important;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white !important;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    margin-left:70px;
+    margin-right:70px;
+  }
+  
+  .btn {
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+  }
+  
+  .btn.done {
+    background-color: #090e74;
+  }
+  
+  .btn.done:hover {
+    background-color: rgba(9, 14, 116, 0.744);
+  }
+  
+  .btn.reject {
+    background-color: #5d0000;
+  }
+  
+  .btn.reject:hover {
+    background-color: rgba(93, 0, 0, 0.796);
+  }
+
+

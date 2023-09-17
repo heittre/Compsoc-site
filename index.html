@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="/ai.jpg">
+    
+    <div class="columns">
+    <div class="column is-3 more"></div>
+    <div class="column is-6">
+    <div class="registration-container has-text-left " background-color="none">
+            <div class="img-container">
+            <img src="/uocLogo.png" alt="" width="70px" height="70px">
+            <img src="/compsocLogo.jpg" alt="" width="70px" height="70px">
+            </div>
+            
+        <h2 class="is-title ">Register for the knowledge session</h2>
+        <p "> Dr. Aparna Silva, a native of Colombo, completed her undergraduate studies in computer science at the
+            University of Colombo. Passionate about artificial intelligence and machine learning, she aspired to pursue
+            a research-oriented career in academia. Her story serves as an inspiration to aspiring researchers in the
+            country and underscores the importance of resilience and resourcefulness in navigating the academic and
+            research career paths in Sri Lanka.
+            
+
+            CompSoc of University Of Colombo is conducting a panel
+discussion with Dr. Aparna Silva on the topic of “Academic and Research Career in Sri Lanka”. This will be a very insighful session and we invite all of you to participate in this session!
+
+            </p>
+            <p class="has-text-left details">If you are participating for the session please fill the form below. <br>
+            <b>Date: 2023 Oct 13th <br>
+                    Venue: UCSC auditorium <br>
+                    time: 10.30 a.m       </b>    <br>  
+            </p>
+
+        
+
+        <form action="process_registration.php" method="POST" class="form-container">
+            <label for="full_name">Full Name:</label>
+            <input class="input is-primary" type="text" id="full_name" name="full_name" placeholder="Chamudi Siriwardhane" required>
+            
+            <label for="email">Email:</label>
+            <input class="input is-primary" type="email" id="email" name="email" required>
+            
+            <label for="contact">Phone Number:</label>
+            <input class="input is-primary" type="tel" id="contact" name="contact_no" required>
+            
+            <label for="expectations">What are your expectations?</label>
+            <input class="input is-primary" type="text" id="expect" name="expect" >
+            
+            <label for="status">Are you a member of Compsoc?</label>
+            <input type="radio" id="memb_status" name="memb_status"value="Yes" > Yes<br>
+            <input type="radio" id="memb_status" name="memb_status"value="No" > No
+                    
+            
+            
+            
+            <label for="comments">Comments (if any):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            
+
+            <div class="btn-container style="display:flex;justify-content:space-between">
+                <button type="cancel" name="cancel" class="btn reject">Cancel</button>
+                <button type="submit" name="submit" class="btn done">Submit</button>
+                
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="column is-3 more">
+        
+    </div>
+    
+    </div>
+    </div>
+
+</body>
+</html>
